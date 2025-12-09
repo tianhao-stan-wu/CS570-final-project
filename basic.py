@@ -127,11 +127,14 @@ if __name__ == "__main__":
 
     ### Time + Memory Start ###
     start_time = time.time()
+    mem1 = process_memory()
+    
     aligned_x, aligned_y, score = basic_sequence_alignment_algorithm(x, y)
     end_time = time.time()
+    mem2 = process_memory()
 
     time_taken_ms = (end_time - start_time) * 1000
-    memory_used_kb = process_memory()
+    memory_used_kb = mem2 - mem1
    
 
     try:

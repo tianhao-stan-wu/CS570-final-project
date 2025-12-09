@@ -168,11 +168,13 @@ if __name__ == "__main__":
         sys.exit(1)
 
     start_time = time.time()
+    mem1 = process_memory()
     aligned_s1, aligned_s2, min_cost = divide_and_conquer_alignment(s1, s2)
     end_time = time.time()
+    mem2 = process_memory()
 
     time_taken_ms = (end_time - start_time) * 1000
-    memory_used_kb = process_memory()
+    memory_used_kb = mem2 - mem1
 
     with open(output_path, 'w') as f:
         f.write(f"{min_cost}\n")

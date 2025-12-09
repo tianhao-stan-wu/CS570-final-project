@@ -3,11 +3,11 @@ import subprocess
 import matplotlib.pyplot as plt
 
 INPUT_FOLDER = "Datapoints"
-# OUTPUT_FOLDER = "Results_efficient"
-# PROGRAM = "efficient.py"
+OUTPUT_FOLDER = "Results_efficient"
+PROGRAM = "efficient.py"
 
-OUTPUT_FOLDER = "Results_basic"
-PROGRAM = "basic.py"
+# OUTPUT_FOLDER = "Results_basic"
+# PROGRAM = "basic.py"
 
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
