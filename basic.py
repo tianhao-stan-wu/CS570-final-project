@@ -139,7 +139,7 @@ if __name__ == "__main__":
             f.write(f"{score}\n")
             f.write(f"{aligned_x}\n")
             f.write(f"{aligned_y}\n")
-            f.write(f"{time_taken_ms}\n")
+            f.write(f"{time_taken_ms:.2f}\n")
             f.write(f"{memory_used_kb}\n")
 
     except IOError:
